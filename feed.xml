@@ -1,0 +1,115 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://localhost:4000/</id>
+  <title>N3sh47</title>
+  <subtitle>You were boasting on and on about your elite hacker skills in the bar and a few Bounty Hunters decided they'd take you up on claims! Prove your status is more than just a few glasses at the bar. I sense bell peppers &amp; beef in your future! </subtitle>
+  <updated>2022-09-05T21:15:02+00:00</updated>
+  <author>
+    <name>Munene John</name>
+    <uri>http://localhost:4000/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en"
+    href="http://localhost:4000/"/>
+  <generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator>
+  <rights> © 2022 Munene John </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>Pickle Rick - TryHackMe</title>
+    <link href="http://localhost:4000/posts/PickleRick/" rel="alternate" type="text/html" title="Pickle Rick - TryHackMe" />
+    <published>2022-09-05T11:42:24+00:00</published>
+  
+    <updated>2022-09-05T11:42:24+00:00</updated>
+  
+    <id>http://localhost:4000/posts/PickleRick/</id>
+    <content src="http://localhost:4000/posts/PickleRick/" />
+    <author>
+      <name>Munene John</name>
+    </author>
+
+  
+    
+    <category term="Blogging" />
+    
+    <category term="TryHackme" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      This Rick and Morty themed challenge requires you to exploit a webserver to find 3 ingredients that will help Rick make his potion to transform himself back into a human from a pickle.
+
+
+
+Recon
+Nmap
+First I started off by conducting an Nmap scan on the target.
+
+$ nmap -sV -p- -vv -oN nmap 10.10.43.157 
+$ nmap -sV -p- -vv -oN nmap 10.10.43.157
+Initiating Connect Scan at 21:51
+Scanning 10.10.43.1...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Bounty Hacker - TryHackMe</title>
+    <link href="http://localhost:4000/posts/BountyHacker/" rel="alternate" type="text/html" title="Bounty Hacker - TryHackMe" />
+    <published>2022-09-04T06:42:24+00:00</published>
+  
+    <updated>2022-09-04T06:42:24+00:00</updated>
+  
+    <id>http://localhost:4000/posts/BountyHacker/</id>
+    <content src="http://localhost:4000/posts/BountyHacker/" />
+    <author>
+      <name>Munene John</name>
+    </author>
+
+  
+    
+    <category term="Blogging" />
+    
+    <category term="TryHackme" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      You talked a big game about being the most elite hacker in the solar system. Prove it and claim your right to the status of Elite Bounty Hacker!
+Bounty Hacker is a room in TryHackMe. In this article you will learn 
+how to exploit the sudo misconfiguration when there is a password reusable vulnerability in the target machine.
+
+
+
+Let’s do this…
+
+Nmap
+First of all I love to start by conducting an ...
+    </summary>
+  
+
+  </entry>
+
+</feed>
+
+
