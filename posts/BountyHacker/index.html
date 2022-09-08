@@ -1363,6 +1363,18 @@
       
 
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
 
     
 
@@ -1470,8 +1482,8 @@
 
 <!-- return element -->
 <span class="readtime" data-toggle="tooltip" data-placement="bottom"
-  title="831 words">
-  <em>4 min</em> read</span>
+  title="974 words">
+  <em>5 min</em> read</span>
 
     </div>
 
@@ -1484,7 +1496,8 @@
 <strong>Bounty Hacker</strong> is a room in <a href="www.TryHackme.com">TryHackMe</a>. In this article you will learn 
 how to exploit the <strong>sudo</strong> misconfiguration when there is a password reusable vulnerability in the target machine.</p>
 
-<p><img data-src="/assets/pictures/Description.png" alt="Room Description" data-proofer-ignore></p>
+<p><img data-src="/assets/pictures/Description.png" alt="Room Description" data-proofer-ignore>
+<em>Room Description</em></p>
 
 <p>Let’s do this…</p>
 
@@ -1512,6 +1525,7 @@ Discovered open port 22/tcp on 10.10.181.69
 <p>First Let’s start with <strong>port 80</strong>.</p>
 
 <p><img data-src="/assets/pictures/TargetPort80.png" alt="port 80 web" data-proofer-ignore>
+<em>Port 80</em>
 Went through the source code and nothing was interesting. 
 <br />
 <br /></p>
@@ -1538,6 +1552,7 @@ Remote system type is UNIX.
 Using binary mode to transfer files.
 </span></pre></td></tr></tbody></table></code></div></div>
 <p><img data-src="/assets/pictures/ftp.png" alt="Ftp Image" data-proofer-ignore>
+<em>ftp Service on port 21</em>
 <br />
 <br />
 I downloaded all the files from this port using the <code class="language-plaintext highlighter-rouge">Mget *</code> command.
@@ -1574,7 +1589,8 @@ Performing the attack on <strong>Port 22</strong></p>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td><td class="rouge-code"><pre><span class="go">hydra -l lin -P /home/nesh/tryhackme/BountyHacker 10.10.195.119  -t 4 ssh
 </span></pre></td></tr></tbody></table></code></div></div>
-<p><img data-src="/assets/pictures/hydra.png" alt="Hydra password Attack" data-proofer-ignore></p>
+<p><img data-src="/assets/pictures/hydra.png" alt="Hydra password Attack" data-proofer-ignore>
+<em>Hydra Password attack</em></p>
 <div class="language-console highlighter-rouge"><div class="code-header">
         <span data-label-text="Console"><i class="fas fa-code small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
@@ -1596,7 +1612,8 @@ Now that we have the needed credentials to ssh to the machine, Let’s do it …
 
 <p><code class="language-plaintext highlighter-rouge">$ ssh lin@10.10.149.154</code></p>
 
-<p><img data-src="/assets/pictures/ssh.png" alt="ssh login" data-proofer-ignore></p>
+<p><img data-src="/assets/pictures/ssh.png" alt="ssh login" data-proofer-ignore>
+<em>SSH Login on port 22</em></p>
 <div class="language-console highlighter-rouge"><div class="code-header">
         <span data-label-text="Console"><i class="fas fa-code small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
@@ -1625,10 +1642,12 @@ the target system.
 I uploaded the linpeas script to my port 80, so that I can go on the target machine to <code style="color: green">/tmp</code> directory and run the script.
 <br />
 <img data-src="/assets/pictures/tun0.png" alt="port 80" data-proofer-ignore>
+<em>Local host</em>
 <br /></p>
 
 <p>I need to go to the <code style="color: green">/tmp</code> to download the script to the script.
 <img data-src="/assets/pictures/linpeas.png" alt="Linpeas Script" data-proofer-ignore>
+<em>Linpeas Script</em>
 It’s time to run the script …</p>
 <div class="language-console highlighter-rouge"><div class="code-header">
         <span data-label-text="Console"><i class="fas fa-code small"></i></span>
@@ -1636,6 +1655,7 @@ It’s time to run the script …</p>
 </pre></td><td class="rouge-code"><pre><span class="gp">$</span><span class="w"> </span>./linpeas.sh
 </pre></td></tr></tbody></table></code></div></div>
 <p><img data-src="/assets/pictures/script.png" alt="Script" data-proofer-ignore>
+<em>Linpeas Script</em>
 Found the target was vulnerable to <code style="color: green">CVE-2020-4034</code>.
 <br />
 <strong>CVE-2020-4034</strong>
@@ -1654,8 +1674,8 @@ After running the script I was in root group. And collected the root flag
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td><td class="rouge-code"><pre>THM{80UN7Y_h4cK3r}
 </pre></td></tr></tbody></table></code></div></div>
-<p><img data-src="/assets/pictures/root.png" alt="Root" data-proofer-ignore></p>
-
+<p><img data-src="/assets/pictures/root.png" alt="Root" data-proofer-ignore>
+<em>Machine Pwned</em></p>
 <h2 id="method-2-using-gtfobins"><span class="mr-2">method 2: Using GTFOBINs</span><a href="#method-2-using-gtfobins" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <p>GTFOBins is a curated list of Unix binaries that can be used to bypass local security restrictions in misconfigured systems.</p>
 
@@ -1680,6 +1700,7 @@ User lin may run the following commands on bountyhacker:
 <br />
 Let’s see what <code class="language-plaintext highlighter-rouge">GTFOBINS</code> has for us …
 <img data-src="/assets/pictures/gtf.png" alt="GTFOBINS" data-proofer-ignore>
+<em>GTFOBINS Github</em>
 Now let’s run the command on our target..</p>
 <div class="language-console highlighter-rouge"><div class="code-header">
         <span data-label-text="Console"><i class="fas fa-code small"></i></span>
@@ -1688,6 +1709,7 @@ Now let’s run the command on our target..</p>
 </span></pre></td></tr></tbody></table></code></div></div>
 <p><img data-src="/assets/pictures/targtf.png" alt="Gtfobins" data-proofer-ignore>
 <img data-src="/assets/pictures/final.png" alt="pwned" data-proofer-ignore>
+<em>Machine Pwned</em>
 There is need upgrade the shell</p>
 <div class="language-console highlighter-rouge"><div class="code-header">
         <span data-label-text="Console"><i class="fas fa-code small"></i></span>
@@ -1702,8 +1724,31 @@ There is need upgrade the shell</p>
 </pre></td><td class="rouge-code"><pre><span class="gp">$</span><span class="w"> </span><span class="nb">cat</span> /root/root.txt
 <span class="go">THM{80UN7Y_h4cK3r}
 </span></pre></td></tr></tbody></table></code></div></div>
-<p><br />
-It was indeed a lot of fun. I hope you enjoyed reading through it.</p>
+<p><br /></p>
+<h2 id="summary"><span class="mr-2">Summary</span><a href="#summary" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<ul>
+  <li>From the <code style="color: green;">Nmap</code> scan, we found 3 open ports i.e
+    <ul>
+      <li><code style="color: green;">Port 21 (ftp)</code></li>
+      <li><code style="color: green;">Port 22 (ssh)</code></li>
+      <li><code style="color: green;">Port 80 (http)</code></li>
+    </ul>
+  </li>
+  <li>Port 22 allowed <code style="color: green;">anonymous</code> login. After the succesful login I found 2 files on the ftp server. <code style="color: green;">locks.txt</code>, <code style="color: green;">note.txt</code>. After I opened <code style="color: green;">note.txt</code> I found Username <code style="color: green;">lin</code> and on the other file I found some password stored iin the file.</li>
+  <li>I used <code style="color: green;">locks.txt</code> as my dictionary to Bruteforce the <code style="color: green;">ssh login</code> using a tool known as <code style="color: green;">hydra</code>.</li>
+  <li>I found <code class="language-plaintext highlighter-rouge">lin's password</code> and used that to login to the machine using <code style="color: green;">ssh</code>.</li>
+  <li>I found that I could escalate my previledges using 2 methods:
+    <ul>
+      <li><code style="color: green;">Linpeas script</code></li>
+      <li><code style="color: green;">GTFOBINS Github</code></li>
+    </ul>
+  </li>
+  <li>With this 2 methods I <code class="language-plaintext highlighter-rouge">Pwned the machine</code>
+<br />
+<br /></li>
+</ul>
+
+<p>It was indeed a lot of fun. I hope you enjoyed reading through it.</p>
 <iframe src="https://giphy.com/embed/d68IdpvmAHohx5NMEV" width="480" height="344" frameborder="0" class="giphy-embed" allowfullscreen=""></iframe>
 <p><a href="https://giphy.com/gifs/moodman-thank-you-thankyou-d68IdpvmAHohx5NMEV"></a></p>
 
@@ -2007,9 +2052,7 @@ It was indeed a lot of fun. I hope you enjoyed reading through it.</p>
                 This Rick and Morty themed challenge requires you to exploit a webserver to find 3 ingredients that will help Rick make his potion to transform himself back into a human from a pickle.
 
 
-
-Recon
-Nma...
+Room Descr...
               </p>
             </div>
           </div>

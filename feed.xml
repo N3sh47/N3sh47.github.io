@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>N3sh47</title>
   <subtitle>You were boasting on and on about your elite hacker skills in the bar and a few Bounty Hunters decided they'd take you up on claims! Prove your status is more than just a few glasses at the bar. I sense bell peppers &amp; beef in your future! </subtitle>
-  <updated>2022-09-05T21:15:02+00:00</updated>
+  <updated>2022-09-07T20:47:58+00:00</updated>
   <author>
     <name>Munene John</name>
     <uri>http://localhost:4000/</uri>
@@ -51,6 +51,7 @@
       This Rick and Morty themed challenge requires you to exploit a webserver to find 3 ingredients that will help Rick make his potion to transform himself back into a human from a pickle.
 
 
+Room Description
 
 Recon
 Nmap
@@ -59,7 +60,7 @@ First I started off by conducting an Nmap scan on the target.
 $ nmap -sV -p- -vv -oN nmap 10.10.43.157 
 $ nmap -sV -p- -vv -oN nmap 10.10.43.157
 Initiating Connect Scan at 21:51
-Scanning 10.10.43.1...
+Sc...
     </summary>
   
 
@@ -100,11 +101,12 @@ Bounty Hacker is a room in TryHackMe. In this article you will learn
 how to exploit the sudo misconfiguration when there is a password reusable vulnerability in the target machine.
 
 
+Room Description
 
 Let’s do this…
 
 Nmap
-First of all I love to start by conducting an ...
+First of all I love to start ...
     </summary>
   
 

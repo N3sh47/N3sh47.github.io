@@ -585,6 +585,214 @@
     
 
   
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+      
+
+      
+      
+
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+
+      
+    
+      
+      
+        
+      
+      
+
+      
+      
+
+      
+
+      
+    
+
+    
+      
+
+        <!-- Add CDN URL -->
+        
+
+        <!-- Add image path -->
+        
+
+        
+        
+
+      
+
+      <!-- lazy-load images <https://github.com/ApoorvSaxena/lozad.js#usage> -->
+
+      
+
+    
+
+    <!-- Add SVG placehoder to prevent layout reflow -->
+
+    
+
+    <!-- Bypass the HTML-proofer test -->
+    
+
+    
+
+  
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+      
+
+      
+      
+
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+
+      
+    
+
+    
+      
+
+        <!-- Add CDN URL -->
+        
+
+        <!-- Add image path -->
+        
+
+        
+        
+
+      
+
+      <!-- lazy-load images <https://github.com/ApoorvSaxena/lozad.js#usage> -->
+
+      
+
+    
+
+    <!-- Add SVG placehoder to prevent layout reflow -->
+
+    
+
+    <!-- Bypass the HTML-proofer test -->
+    
+
+    
+
+  
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+      
+
+      
+      
+
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+
+      
+    
+
+    
+      
+
+        <!-- Add CDN URL -->
+        
+
+        <!-- Add image path -->
+        
+
+        
+        
+
+      
+
+      <!-- lazy-load images <https://github.com/ApoorvSaxena/lozad.js#usage> -->
+
+      
+
+    
+
+    <!-- Add SVG placehoder to prevent layout reflow -->
+
+    
+
+    <!-- Bypass the HTML-proofer test -->
+    
+
+    
+
+  
 
   
 
@@ -678,6 +886,42 @@
 
 
 
+  
+  
+
+  
+
+    
+      
+      
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+        
+        
+
+    
+
+    
+    
+
+    
+
+  
+
+  
+
+
+
 <!-- return -->
 
 
@@ -754,7 +998,7 @@
 
 <!-- return element -->
 <span class="readtime" data-toggle="tooltip" data-placement="bottom"
-  title="107 words">
+  title="195 words">
   <em>1 min</em> read</span>
 
     </div>
@@ -767,6 +1011,7 @@
   <p>This <strong>Rick and Morty</strong> themed challenge requires you to exploit a webserver to find 3 ingredients that will help Rick make his potion to transform himself back into a human from a pickle.</p>
 
 <p><img data-src="/assets/pictures/picklectf/pickledescription.png" alt="Room Description" data-proofer-ignore>
+<em>Room Description</em>
 <br /></p>
 <h2 id="recon"><span class="mr-2">Recon</span><a href="#recon" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <h2 id="nmap"><span class="mr-2">Nmap</span><a href="#nmap" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
@@ -787,11 +1032,61 @@ Discovered open port 22/tcp on 10.10.43.157
 Discovered open port 80/tcp on 10.10.43.157
 </span></pre></td></tr></tbody></table></code></div></div>
 <p><img data-src="/assets/pictures/picklectf/nmap.png" alt="Nmap Scan" data-proofer-ignore>
+<em>Nmap Scan</em>
 Let’s check <strong>port 80</strong></p>
 <h2 id="port-80"><span class="mr-2">Port 80</span><a href="#port-80" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
 <p><img data-src="/assets/pictures/picklectf/port80.png" alt="Port 80" data-proofer-ignore>
-There is nothing interesting here let’s try to check the <code style="color: green;">Source Code</code>.</p>
+<em>port 80</em>
+There is nothing interesting here let’s try to check the <code style="color: green;">Source Code</code>.
+When you inspect the code you will see something very interesting, Saw a comment:</p>
+<div class="language-console highlighter-rouge"><div class="code-header">
+        <span data-label-text="Console"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="rouge-code"><pre><span class="gp">$</span><span class="w"> </span>curl 10.10.73.218 
+<span class="c">...
+</span><span class="go">  &lt;!--
+
+    Note to self, remember username!
+
+    Username: R1ckRul3s
+
+</span><span class="gp">  --&gt;</span><span class="w">
+</span><span class="go">
+</span><span class="gp">&lt;/body&gt;</span><span class="w">
+</span><span class="gp">&lt;/html&gt;</span><span class="w">
+</span></pre></td></tr></tbody></table></code></div></div>
+<p><img data-src="/assets/pictures/picklectf/sourcecode.png" alt="Source Code" class="shadow" data-proofer-ignore>
+<em>source code inspection</em>
+Now we have a <strong>Username: <code style="color: green;">R1ckRul3s</code></strong>
+<br />
+Let’s check for more.</p>
+
+<p><img data-src="/assets/pictures/picklectf/gobuster.png" alt="Gobuster" data-proofer-ignore>
+<em>Gobuster Scan</em></p>
+
+<p><img data-src="/assets/pictures/picklectf/wulabl.png" alt="Robots.txt" data-proofer-ignore>
+<em>Robots.txt Directory</em></p>
+
+<p>Found something in this directory: <code style="color: green;">Wubbalubbadubdub</code>.
+ This might help us somewhere. 
+ <br />
+ Let’s continue to gather more info about the target.</p>
+
+<blockquote class="prompt-info"><div>
+  <p>Example line for prompt.</p>
+</div></blockquote>
 
 </div>
 
