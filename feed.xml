@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>N3sh47</title>
   <subtitle>You were boasting on and on about your elite hacker skills in the bar and a few Bounty Hunters decided they'd take you up on claims! Prove your status is more than just a few glasses at the bar. I sense bell peppers &amp; beef in your future! </subtitle>
-  <updated>2022-09-08T05:50:33+00:00</updated>
+  <updated>2022-09-14T07:08:45+00:00</updated>
   <author>
     <name>Munene John</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,53 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Basic Pentesting - TryHackMe</title>
+    <link href="http://localhost:4000/posts/BasicPentesting/" rel="alternate" type="text/html" title="Basic Pentesting - TryHackMe" />
+    <published>2022-09-08T02:38:14+00:00</published>
+  
+    <updated>2022-09-08T02:38:14+00:00</updated>
+  
+    <id>http://localhost:4000/posts/BasicPentesting/</id>
+    <content src="http://localhost:4000/posts/BasicPentesting/" />
+    <author>
+      <name>Munene John</name>
+    </author>
+
+  
+    
+    <category term="Blogging" />
+    
+    <category term="TryHackme" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      In these set of tasks you’ll learn the following: brute forcing, hash cracking, service enumeration and Linux Enumeration. The main goal here is to learn as much as possible.
+
+Room Description
+Recon
+Nmap
+Let’s start by gathering as information as possible. I always love using Nmap to scan our target. 
+
+Nmap Scan
+
+Port 80 seems promising, Let’s start with it.
+Port 80
+Port 80 is the port number a...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
