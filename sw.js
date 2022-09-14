@@ -1,6 +1,6 @@
-self.importScripts('/assets/js/data/swcache.js');
+self.importScripts('/https://n3sh47.github.io/assets/js/data/swcache.js');
 
-const cacheName = 'chirpy-20220914.070846';
+const cacheName = 'chirpy-20220914.071954';
 
 function verifyDomain(url) {
   for (const domain of allowedDomains) {
