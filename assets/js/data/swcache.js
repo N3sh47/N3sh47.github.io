@@ -1,43 +1,43 @@
 const resource = [
 
   /* --- CSS --- */
-  '/Blog/assets/css/style.css',
+  '/assets/css/style.css',
 
   /* --- PWA --- */
-  '/Blog/app.js',
-  '/Blog/sw.js',
+  '/app.js',
+  '/sw.js',
 
   /* --- HTML --- */
-  '/Blog/index.html',
-  '/Blog/404.html',
+  '/index.html',
+  '/404.html',
   
-    '/Blog/categories/',
+    '/categories/',
   
-    '/Blog/tags/',
+    '/tags/',
   
-    '/Blog/archives/',
+    '/archives/',
   
-    '/Blog/about/',
+    '/about/',
   
 
   /* --- Favicons & compressed JS --- */
   
   
-    '/Blog/assets/img/favicons/android-chrome-192x192.png',
-    '/Blog/assets/img/favicons/android-chrome-512x512.png',
-    '/Blog/assets/img/favicons/apple-touch-icon.png',
-    '/Blog/assets/img/favicons/favicon-16x16.png',
-    '/Blog/assets/img/favicons/favicon-32x32.png',
-    '/Blog/assets/img/favicons/favicon.ico',
-    '/Blog/assets/img/favicons/mstile-150x150.png',
-    '/Blog/assets/img/favicons/safari-pinned-tab.svg',
-    '/Blog/assets/js/dist/categories.min.js',
-    '/Blog/assets/js/dist/commons.min.js',
-    '/Blog/assets/js/dist/home.min.js',
-    '/Blog/assets/js/dist/misc.min.js',
-    '/Blog/assets/js/dist/page.min.js',
-    '/Blog/assets/js/dist/post.min.js',
-    '/Blog/assets/js/dist/pvreport.min.js'
+    '/assets/img/favicons/android-chrome-192x192.png',
+    '/assets/img/favicons/android-chrome-512x512.png',
+    '/assets/img/favicons/apple-touch-icon.png',
+    '/assets/img/favicons/favicon-16x16.png',
+    '/assets/img/favicons/favicon-32x32.png',
+    '/assets/img/favicons/favicon.ico',
+    '/assets/img/favicons/mstile-150x150.png',
+    '/assets/img/favicons/safari-pinned-tab.svg',
+    '/assets/js/dist/categories.min.js',
+    '/assets/js/dist/commons.min.js',
+    '/assets/js/dist/home.min.js',
+    '/assets/js/dist/misc.min.js',
+    '/assets/js/dist/page.min.js',
+    '/assets/js/dist/post.min.js',
+    '/assets/js/dist/pvreport.min.js'
 
 ];
 
