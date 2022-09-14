@@ -1,43 +1,43 @@
 const resource = [
 
   /* --- CSS --- */
-  '/n3sh47.github.io/assets/css/style.css',
+  '/Blog/assets/css/style.css',
 
   /* --- PWA --- */
-  '/n3sh47.github.io/app.js',
-  '/n3sh47.github.io/sw.js',
+  '/Blog/app.js',
+  '/Blog/sw.js',
 
   /* --- HTML --- */
-  '/n3sh47.github.io/index.html',
-  '/n3sh47.github.io/404.html',
+  '/Blog/index.html',
+  '/Blog/404.html',
   
-    '/n3sh47.github.io/categories/',
+    '/Blog/categories/',
   
-    '/n3sh47.github.io/tags/',
+    '/Blog/tags/',
   
-    '/n3sh47.github.io/archives/',
+    '/Blog/archives/',
   
-    '/n3sh47.github.io/about/',
+    '/Blog/about/',
   
 
   /* --- Favicons & compressed JS --- */
   
   
-    '/n3sh47.github.io/assets/img/favicons/android-chrome-192x192.png',
-    '/n3sh47.github.io/assets/img/favicons/android-chrome-512x512.png',
-    '/n3sh47.github.io/assets/img/favicons/apple-touch-icon.png',
-    '/n3sh47.github.io/assets/img/favicons/favicon-16x16.png',
-    '/n3sh47.github.io/assets/img/favicons/favicon-32x32.png',
-    '/n3sh47.github.io/assets/img/favicons/favicon.ico',
-    '/n3sh47.github.io/assets/img/favicons/mstile-150x150.png',
-    '/n3sh47.github.io/assets/img/favicons/safari-pinned-tab.svg',
-    '/n3sh47.github.io/assets/js/dist/categories.min.js',
-    '/n3sh47.github.io/assets/js/dist/commons.min.js',
-    '/n3sh47.github.io/assets/js/dist/home.min.js',
-    '/n3sh47.github.io/assets/js/dist/misc.min.js',
-    '/n3sh47.github.io/assets/js/dist/page.min.js',
-    '/n3sh47.github.io/assets/js/dist/post.min.js',
-    '/n3sh47.github.io/assets/js/dist/pvreport.min.js'
+    '/Blog/assets/img/favicons/android-chrome-192x192.png',
+    '/Blog/assets/img/favicons/android-chrome-512x512.png',
+    '/Blog/assets/img/favicons/apple-touch-icon.png',
+    '/Blog/assets/img/favicons/favicon-16x16.png',
+    '/Blog/assets/img/favicons/favicon-32x32.png',
+    '/Blog/assets/img/favicons/favicon.ico',
+    '/Blog/assets/img/favicons/mstile-150x150.png',
+    '/Blog/assets/img/favicons/safari-pinned-tab.svg',
+    '/Blog/assets/js/dist/categories.min.js',
+    '/Blog/assets/js/dist/commons.min.js',
+    '/Blog/assets/js/dist/home.min.js',
+    '/Blog/assets/js/dist/misc.min.js',
+    '/Blog/assets/js/dist/page.min.js',
+    '/Blog/assets/js/dist/post.min.js',
+    '/Blog/assets/js/dist/pvreport.min.js'
 
 ];
 
@@ -48,7 +48,7 @@ const allowedDomains = [
     'www.google-analytics.com',
   
 
-  'localhost:4000',
+  '',
 
   
 

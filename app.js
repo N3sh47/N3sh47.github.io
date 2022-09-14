@@ -3,7 +3,7 @@ const $btnRefresh = $('#notification .toast-body>button');
 
 if ('serviceWorker' in navigator) {
   /* Registering Service Worker */
-  navigator.serviceWorker.register('/n3sh47.github.io/sw.js')
+  navigator.serviceWorker.register('/Blog/sw.js')
     .then(registration => {
 
       /* in case the user ignores the notification */

@@ -1,33 +1,33 @@
 
 
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <id>http://localhost:4000/n3sh47.github.io/</id>
+  <id>/Blog/</id>
   <title>N3sh47</title>
   <subtitle>You were boasting on and on about your elite hacker skills in the bar and a few Bounty Hunters decided they'd take you up on claims! Prove your status is more than just a few glasses at the bar. I sense bell peppers &amp; beef in your future! </subtitle>
-  <updated>2022-09-14T07:29:17+00:00</updated>
+  <updated>2022-09-14T07:42:10+00:00</updated>
   <author>
     <name>Munene John</name>
-    <uri>http://localhost:4000/n3sh47.github.io/</uri>
+    <uri>/Blog/</uri>
   </author>
-  <link rel="self" type="application/atom+xml" href="http://localhost:4000/n3sh47.github.io/feed.xml"/>
+  <link rel="self" type="application/atom+xml" href="/Blog/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en"
-    href="http://localhost:4000/n3sh47.github.io/"/>
+    href="/Blog/"/>
   <generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator>
   <rights> © 2022 Munene John </rights>
-  <icon>/n3sh47.github.io/assets/img/favicons/favicon.ico</icon>
-  <logo>/n3sh47.github.io/assets/img/favicons/favicon-96x96.png</logo>
+  <icon>/Blog/assets/img/favicons/favicon.ico</icon>
+  <logo>/Blog/assets/img/favicons/favicon-96x96.png</logo>
 
 
   
   <entry>
     <title>Basic Pentesting - TryHackMe</title>
-    <link href="http://localhost:4000/n3sh47.github.io/posts/BasicPentesting/" rel="alternate" type="text/html" title="Basic Pentesting - TryHackMe" />
+    <link href="/Blog/posts/BasicPentesting/" rel="alternate" type="text/html" title="Basic Pentesting - TryHackMe" />
     <published>2022-09-08T02:38:14+00:00</published>
   
     <updated>2022-09-08T02:38:14+00:00</updated>
   
-    <id>http://localhost:4000/n3sh47.github.io/posts/BasicPentesting/</id>
-    <content src="http://localhost:4000/n3sh47.github.io/posts/BasicPentesting/" />
+    <id>/Blog/posts/BasicPentesting/</id>
+    <content src="/Blog/posts/BasicPentesting/" />
     <author>
       <name>Munene John</name>
     </author>
@@ -68,13 +68,13 @@ Port 80 is the port number a...
   
   <entry>
     <title>Pickle Rick - TryHackMe</title>
-    <link href="http://localhost:4000/n3sh47.github.io/posts/PickleRick/" rel="alternate" type="text/html" title="Pickle Rick - TryHackMe" />
+    <link href="/Blog/posts/PickleRick/" rel="alternate" type="text/html" title="Pickle Rick - TryHackMe" />
     <published>2022-09-05T11:42:24+00:00</published>
   
     <updated>2022-09-05T11:42:24+00:00</updated>
   
-    <id>http://localhost:4000/n3sh47.github.io/posts/PickleRick/</id>
-    <content src="http://localhost:4000/n3sh47.github.io/posts/PickleRick/" />
+    <id>/Blog/posts/PickleRick/</id>
+    <content src="/Blog/posts/PickleRick/" />
     <author>
       <name>Munene John</name>
     </author>
@@ -116,13 +116,13 @@ Sc...
   
   <entry>
     <title>Bounty Hacker - TryHackMe</title>
-    <link href="http://localhost:4000/n3sh47.github.io/posts/BountyHacker/" rel="alternate" type="text/html" title="Bounty Hacker - TryHackMe" />
+    <link href="/Blog/posts/BountyHacker/" rel="alternate" type="text/html" title="Bounty Hacker - TryHackMe" />
     <published>2022-09-04T06:42:24+00:00</published>
   
     <updated>2022-09-04T06:42:24+00:00</updated>
   
-    <id>http://localhost:4000/n3sh47.github.io/posts/BountyHacker/</id>
-    <content src="http://localhost:4000/n3sh47.github.io/posts/BountyHacker/" />
+    <id>/Blog/posts/BountyHacker/</id>
+    <content src="/Blog/posts/BountyHacker/" />
     <author>
       <name>Munene John</name>
     </author>
