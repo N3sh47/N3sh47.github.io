@@ -1,6 +1,21 @@
 [
   
   {
+    "title": "Mr Robot CTF - TryHackMe",
+    "url": "/posts/MrRobot/",
+    "categories": "Blogging, TryHackme",
+    "tags": "walkthrough",
+    "date": "2022-09-20 03:30:42 +0000",
+    
+
+
+
+
+
+    "snippet": "This is a Mr Robot themed CTF originally taken from Vulnhub.Here We Bruteforce Wordpress login pannel to find a valid user and Bruteforce again to find a valid password.Once we are in, we upload a php shell on Wordpress Theme to get a reverse shell and privilege escalate using Suid and Nmap.Elliot (movie star)ReconNmap"
+  },
+  
+  {
     "title": "Basic Pentesting - TryHackMe",
     "url": "/posts/BasicPentesting/",
     "categories": "Blogging, TryHackme",

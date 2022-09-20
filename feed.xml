@@ -4,7 +4,7 @@
   <id>/</id>
   <title>N3sh47</title>
   <subtitle>You were boasting on and on about your elite hacker skills in the bar and a few Bounty Hunters decided they'd take you up on claims! Prove your status is more than just a few glasses at the bar. I sense bell peppers &amp; beef in your future! </subtitle>
-  <updated>2022-09-20T20:09:11+00:00</updated>
+  <updated>2022-09-20T20:50:08+00:00</updated>
   <author>
     <name>Munene John</name>
     <uri>/</uri>
@@ -17,6 +17,50 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Mr Robot CTF - TryHackMe</title>
+    <link href="/posts/MrRobot/" rel="alternate" type="text/html" title="Mr Robot CTF - TryHackMe" />
+    <published>2022-09-20T03:30:42+00:00</published>
+  
+    <updated>2022-09-20T03:30:42+00:00</updated>
+  
+    <id>/posts/MrRobot/</id>
+    <content src="/posts/MrRobot/" />
+    <author>
+      <name>Munene John</name>
+    </author>
+
+  
+    
+    <category term="Blogging" />
+    
+    <category term="TryHackme" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+
+This is a Mr Robot themed CTF originally taken from Vulnhub.Here We Bruteforce Wordpress login pannel to find a valid user and Bruteforce again to find a valid password.Once we are in, we upload a php shell on Wordpress Theme to get a reverse shell and privilege escalate using Suid and Nmap.
+
+Elliot (movie star)
+
+Recon
+Nmap
+
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
