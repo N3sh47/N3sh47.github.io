@@ -4,7 +4,7 @@
   <id>/</id>
   <title>N3sh47</title>
   <subtitle>You were boasting on and on about your elite hacker skills in the bar and a few Bounty Hunters decided they'd take you up on claims! Prove your status is more than just a few glasses at the bar. I sense bell peppers &amp; beef in your future! </subtitle>
-  <updated>2022-09-27T12:57:30+00:00</updated>
+  <updated>2022-09-27T17:54:00+00:00</updated>
   <author>
     <name>Munene John</name>
     <uri>/</uri>
@@ -17,6 +17,48 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Eternal Blue - TryHackMe</title>
+    <link href="/posts/EternalBlue/" rel="alternate" type="text/html" title="Eternal Blue - TryHackMe" />
+    <published>2022-09-20T03:30:42+00:00</published>
+  
+    <updated>2022-09-20T03:30:42+00:00</updated>
+  
+    <id>/posts/EternalBlue/</id>
+    <content src="/posts/EternalBlue/" />
+    <author>
+      <name>Munene John</name>
+    </author>
+
+  
+    
+    <category term="Blogging" />
+    
+    <category term="TryHackme" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Introduction
+
+EternalBlue is a computer exploit developed by the U.S. National Security Agency. It was leaked by the Shadow Brokers hacker group on April 14, 2017, one month after Microsoft released patches for the vulnerability. On May 12, 2017, the worldwide WannaCry ransomware used this exploit to attack unpatched computers.
+
+
+
+In this article I am going to show you how to exploit a very pop...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>

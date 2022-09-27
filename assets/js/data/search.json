@@ -1,6 +1,21 @@
 [
   
   {
+    "title": "Eternal Blue - TryHackMe",
+    "url": "/posts/EternalBlue/",
+    "categories": "Blogging, TryHackme",
+    "tags": "walkthrough",
+    "date": "2022-09-20 03:30:42 +0000",
+    
+
+
+
+
+
+    "snippet": "IntroductionEternalBlue is a computer exploit developed by the U.S. National Security Agency. It was leaked by the Shadow Brokers hacker group on April 14, 2017, one month after Microsoft released patches for the vulnerability. On May 12, 2017, the worldwide WannaCry ransomware used this exploit to attack unpatched computers.In this article I am going to show you how to exploit a very popular Microsoft Windows Vulnerability to gain system access and escalate privileges.Before reading this article, I urge you folks to try it out first!!ReconScan and learn what exploit this machine is vulnerable to. Please note that this machine does not respond to ping (ICMP) and may take a few minutes to boot up. This room is not meant to be a boot2root CTF, rather, this is an educational series for complete beginners. Professionals will likely get very little out of this room beyond basic practice as the process here is meant to be beginner-focused. —TryhackmeIn this phase, our main aim is to gather information about our target as much as possible. We can achieve that by using Nmap to gather information on Open ports and Closed ports. Soo without wasting time I started by scaning my target.$ nmap -sV -p- -vv -Pn -oN nmap 10.10.140.222Host discovery disabled (-Pn). All addresses will be marked 'up' and scan times may be slower.Starting Nmap 7.92 ( https://nmap.org ) at 2022-09-27 20:17 EATNSE: Loaded 45 scripts for scanning.Initiating Parallel DNS resolution of 1 host. at 20:17Completed Parallel DNS resolution of 1 host. at 20:17, 0.07s elapsedInitiating Connect Scan at 20:17Scanning 10.10.140.222 [65535 ports]Discovered open port 445/tcp on 10.10.140.222Discovered open port 135/tcp on 10.10.140.222Discovered open port 3389/tcp on 10.10.140.222Discovered open port 139/tcp on 10.10.140.222Now that from the result of the scan, I was able to answer Task 1 ."
+  },
+  
+  {
     "title": "Mr Robot CTF - TryHackMe",
     "url": "/posts/MrRobot/",
     "categories": "Blogging, TryHackme",
