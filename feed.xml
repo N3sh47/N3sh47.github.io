@@ -4,7 +4,7 @@
   <id>https://n3sh47.github.io/</id>
   <title>N3sh47</title>
   <subtitle>You were boasting on and on about your elite hacker skills in the bar and a few Bounty Hunters decided they'd take you up on claims! Prove your status is more than just a few glasses at the bar. I sense bell peppers &amp; beef in your future! </subtitle>
-  <updated>2022-10-04T16:32:37+00:00</updated>
+  <updated>2022-10-04T21:30:30+00:00</updated>
   <author>
     <name>Munene John</name>
     <uri>https://n3sh47.github.io/</uri>
@@ -48,10 +48,19 @@
 
 
 
-      
-This room mainly focused on active recon, web app attacks, and privilege escalation.
-Recon
+      Introduction
 
+
+This room mainly focused on active recon, web app attacks, and privilege escalation. I love this CTF because it manages to cover various topics in web exploitation and privilege escalation.
+Reconnaissance
+I started with information gathering on my target. The tool I used is Nmap. 
+
+
+From the scan, we have 6 open ports.
+
+Answer 6 ports
+
+The version of the squid proxy running on th...
     </summary>
   
 

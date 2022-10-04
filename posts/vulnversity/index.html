@@ -46,8 +46,8 @@
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="Vulnversity - TryHackMe" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="This room mainly focused on active recon, web app attacks, and privilege escalation. Recon" />
-<meta property="og:description" content="This room mainly focused on active recon, web app attacks, and privilege escalation. Recon" />
+<meta name="description" content="Introduction This room mainly focused on active recon, web app attacks, and privilege escalation. I love this CTF because it manages to cover various topics in web exploitation and privilege escalation. Reconnaissance I started with information gathering on my target. The tool I used is Nmap. From the scan, we have 6 open ports. Answer 6 ports The version of the squid proxy running on the machine is: Answer 3.5.12 Our target’s most likely Operating system is: Answer Ubuntu Gain Access From the scan, we see that we have a http service running on port 3333. So I visited the location on my browser and found a website that was running on this port. I tried to inspect the the source code of this website but didn’t find anything helpful at all. So I decided to do perform a hidden directory scan on this particular website using a popular site known as Gobuster. Alternatively, you can opt to use another tool that serve the same purpose known as Feroxbuster. So far So good, right? From the gobuster I found a hidden directory /internal After visiting the directory on my browser I realised that it a page where I could upload anything I wanted. I tried to upload a php reverse shell script but then I realised that some extensions were being filtered. This is where it gets interesting since you have to think for an alternative. So I decided to use Burpsuite. First, I created a payload:" />
+<meta property="og:description" content="Introduction This room mainly focused on active recon, web app attacks, and privilege escalation. I love this CTF because it manages to cover various topics in web exploitation and privilege escalation. Reconnaissance I started with information gathering on my target. The tool I used is Nmap. From the scan, we have 6 open ports. Answer 6 ports The version of the squid proxy running on the machine is: Answer 3.5.12 Our target’s most likely Operating system is: Answer Ubuntu Gain Access From the scan, we see that we have a http service running on port 3333. So I visited the location on my browser and found a website that was running on this port. I tried to inspect the the source code of this website but didn’t find anything helpful at all. So I decided to do perform a hidden directory scan on this particular website using a popular site known as Gobuster. Alternatively, you can opt to use another tool that serve the same purpose known as Feroxbuster. So far So good, right? From the gobuster I found a hidden directory /internal After visiting the directory on my browser I realised that it a page where I could upload anything I wanted. I tried to upload a php reverse shell script but then I realised that some extensions were being filtered. This is where it gets interesting since you have to think for an alternative. So I decided to use Burpsuite. First, I created a payload:" />
 <link rel="canonical" href="https://n3sh47.github.io/posts/vulnversity/" />
 <meta property="og:url" content="https://n3sh47.github.io/posts/vulnversity/" />
 <meta property="og:site_name" content="N3sh47" />
@@ -58,7 +58,7 @@
 <meta name="twitter:site" content="@Unkn0wn_T3chie" />
 <meta name="google-site-verification" content="googlea6220aea28337f81.html" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-10-02T02:43:12+00:00","datePublished":"2022-10-02T02:43:12+00:00","description":"This room mainly focused on active recon, web app attacks, and privilege escalation. Recon","headline":"Vulnversity - TryHackMe","mainEntityOfPage":{"@type":"WebPage","@id":"https://n3sh47.github.io/posts/vulnversity/"},"url":"https://n3sh47.github.io/posts/vulnversity/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-10-02T02:43:12+00:00","datePublished":"2022-10-02T02:43:12+00:00","description":"Introduction This room mainly focused on active recon, web app attacks, and privilege escalation. I love this CTF because it manages to cover various topics in web exploitation and privilege escalation. Reconnaissance I started with information gathering on my target. The tool I used is Nmap. From the scan, we have 6 open ports. Answer 6 ports The version of the squid proxy running on the machine is: Answer 3.5.12 Our target’s most likely Operating system is: Answer Ubuntu Gain Access From the scan, we see that we have a http service running on port 3333. So I visited the location on my browser and found a website that was running on this port. I tried to inspect the the source code of this website but didn’t find anything helpful at all. So I decided to do perform a hidden directory scan on this particular website using a popular site known as Gobuster. Alternatively, you can opt to use another tool that serve the same purpose known as Feroxbuster. So far So good, right? From the gobuster I found a hidden directory /internal After visiting the directory on my browser I realised that it a page where I could upload anything I wanted. I tried to upload a php reverse shell script but then I realised that some extensions were being filtered. This is where it gets interesting since you have to think for an alternative. So I decided to use Burpsuite. First, I created a payload:","headline":"Vulnversity - TryHackMe","mainEntityOfPage":{"@type":"WebPage","@id":"https://n3sh47.github.io/posts/vulnversity/"},"url":"https://n3sh47.github.io/posts/vulnversity/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -446,6 +446,869 @@
     
 
   
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+      
+
+      
+      
+
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+
+      
+    
+      
+      
+        
+
+    
+      
+
+        <!-- Add CDN URL -->
+        
+
+        <!-- Add image path -->
+        
+
+        
+        
+
+      
+
+      <!-- lazy-load images <https://github.com/ApoorvSaxena/lozad.js#usage> -->
+
+      
+
+    
+
+    <!-- Add SVG placehoder to prevent layout reflow -->
+
+    
+
+    <!-- Bypass the HTML-proofer test -->
+    
+
+    
+
+  
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+      
+
+      
+      
+
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+
+      
+    
+      
+      
+        
+
+    
+      
+
+        <!-- Add CDN URL -->
+        
+
+        <!-- Add image path -->
+        
+
+        
+        
+
+      
+
+      <!-- lazy-load images <https://github.com/ApoorvSaxena/lozad.js#usage> -->
+
+      
+
+    
+
+    <!-- Add SVG placehoder to prevent layout reflow -->
+
+    
+
+    <!-- Bypass the HTML-proofer test -->
+    
+
+    
+
+  
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+      
+
+      
+      
+
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+
+      
+    
+      
+      
+        
+
+    
+      
+
+        <!-- Add CDN URL -->
+        
+
+        <!-- Add image path -->
+        
+
+        
+        
+
+      
+
+      <!-- lazy-load images <https://github.com/ApoorvSaxena/lozad.js#usage> -->
+
+      
+
+    
+
+    <!-- Add SVG placehoder to prevent layout reflow -->
+
+    
+
+    <!-- Bypass the HTML-proofer test -->
+    
+
+    
+
+  
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+      
+
+      
+      
+
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+
+      
+    
+
+    
+      
+
+        <!-- Add CDN URL -->
+        
+
+        <!-- Add image path -->
+        
+
+        
+        
+
+      
+
+      <!-- lazy-load images <https://github.com/ApoorvSaxena/lozad.js#usage> -->
+
+      
+
+    
+
+    <!-- Add SVG placehoder to prevent layout reflow -->
+
+    
+
+    <!-- Bypass the HTML-proofer test -->
+    
+
+    
+
+  
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+      
+
+      
+      
+
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+
+      
+    
+
+    
+      
+
+        <!-- Add CDN URL -->
+        
+
+        <!-- Add image path -->
+        
+
+        
+        
+
+      
+
+      <!-- lazy-load images <https://github.com/ApoorvSaxena/lozad.js#usage> -->
+
+      
+
+    
+
+    <!-- Add SVG placehoder to prevent layout reflow -->
+
+    
+
+    <!-- Bypass the HTML-proofer test -->
+    
+
+    
+
+  
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+      
+
+      
+      
+
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+
+      
+    
+
+    
+      
+
+        <!-- Add CDN URL -->
+        
+
+        <!-- Add image path -->
+        
+
+        
+        
+
+      
+
+      <!-- lazy-load images <https://github.com/ApoorvSaxena/lozad.js#usage> -->
+
+      
+
+    
+
+    <!-- Add SVG placehoder to prevent layout reflow -->
+
+    
+
+    <!-- Bypass the HTML-proofer test -->
+    
+
+    
+
+  
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+      
+
+      
+      
+
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+
+      
+    
+      
+      
+        
+
+    
+      
+
+        <!-- Add CDN URL -->
+        
+
+        <!-- Add image path -->
+        
+
+        
+        
+
+      
+
+      <!-- lazy-load images <https://github.com/ApoorvSaxena/lozad.js#usage> -->
+
+      
+
+    
+
+    <!-- Add SVG placehoder to prevent layout reflow -->
+
+    
+
+    <!-- Bypass the HTML-proofer test -->
+    
+
+    
+
+  
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+      
+
+      
+      
+
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+
+      
+    
+
+    
+      
+
+        <!-- Add CDN URL -->
+        
+
+        <!-- Add image path -->
+        
+
+        
+        
+
+      
+
+      <!-- lazy-load images <https://github.com/ApoorvSaxena/lozad.js#usage> -->
+
+      
+
+    
+
+    <!-- Add SVG placehoder to prevent layout reflow -->
+
+    
+
+    <!-- Bypass the HTML-proofer test -->
+    
+
+    
+
+  
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+      
+
+      
+      
+
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+
+      
+    
+      
+      
+        
+
+    
+      
+
+        <!-- Add CDN URL -->
+        
+
+        <!-- Add image path -->
+        
+
+        
+        
+
+      
+
+      <!-- lazy-load images <https://github.com/ApoorvSaxena/lozad.js#usage> -->
+
+      
+
+    
+
+    <!-- Add SVG placehoder to prevent layout reflow -->
+
+    
+
+    <!-- Bypass the HTML-proofer test -->
+    
+
+    
+
+  
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+      
+
+      
+      
+
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+
+      
+    
+
+    
+      
+
+        <!-- Add CDN URL -->
+        
+
+        <!-- Add image path -->
+        
+
+        
+        
+
+      
+
+      <!-- lazy-load images <https://github.com/ApoorvSaxena/lozad.js#usage> -->
+
+      
+
+    
+
+    <!-- Add SVG placehoder to prevent layout reflow -->
+
+    
+
+    <!-- Bypass the HTML-proofer test -->
+    
+
+    
+
+  
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+      
+
+      
+      
+
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+
+      
+    
+
+    
+      
+
+        <!-- Add CDN URL -->
+        
+
+        <!-- Add image path -->
+        
+
+        
+        
+
+      
+
+      <!-- lazy-load images <https://github.com/ApoorvSaxena/lozad.js#usage> -->
+
+      
+
+    
+
+    <!-- Add SVG placehoder to prevent layout reflow -->
+
+    
+
+    <!-- Bypass the HTML-proofer test -->
+    
+
+    
+
+  
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+      
+
+      
+      
+
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+
+      
+    
+
+    
+      
+
+        <!-- Add CDN URL -->
+        
+
+        <!-- Add image path -->
+        
+
+        
+        
+
+      
+
+      <!-- lazy-load images <https://github.com/ApoorvSaxena/lozad.js#usage> -->
+
+      
+
+    
+
+    <!-- Add SVG placehoder to prevent layout reflow -->
+
+    
+
+    <!-- Bypass the HTML-proofer test -->
+    
+
+    
+
+  
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+      
+
+      
+      
+
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+
+      
+    
+      
+      
+        
+
+    
+      
+
+        <!-- Add CDN URL -->
+        
+
+        <!-- Add image path -->
+        
+
+        
+        
+
+      
+
+      <!-- lazy-load images <https://github.com/ApoorvSaxena/lozad.js#usage> -->
+
+      
+
+    
+
+    <!-- Add SVG placehoder to prevent layout reflow -->
+
+    
+
+    <!-- Bypass the HTML-proofer test -->
+    
+
+    
+
+  
 
   
 
@@ -484,6 +1347,42 @@
       
 
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
 
     
 
@@ -491,6 +1390,29 @@
 
   
   
+
+  
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+
+    
 
   
 
@@ -591,8 +1513,8 @@
 
 <!-- return element -->
 <span class="readtime" data-toggle="tooltip" data-placement="bottom"
-  title="14 words">
-  <em>1 min</em> read</span>
+  title="397 words">
+  <em>2 min</em> read</span>
 
     </div>
 
@@ -601,9 +1523,65 @@
 </div> <!-- .post-meta -->
 
 <div class="post-content">
-  <p><img data-src="/assets/pictures/vulnversity/description.png" alt="Description" data-proofer-ignore>
-This room mainly focused on active recon, web app attacks, and privilege escalation.</p>
-<h2 id="recon"><span class="mr-2">Recon</span><a href="#recon" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+  <h2 id="introduction"><span class="mr-2">Introduction</span><a href="#introduction" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p><img data-src="/assets/pictures/vulnversity/vulnversity.png" alt="Vulnversity" data-proofer-ignore>
+<br />
+This room mainly focused on active recon, web app attacks, and privilege escalation. I love this CTF because it manages to cover various topics in web exploitation and privilege escalation.</p>
+<h2 id="reconnaissance"><span class="mr-2">Reconnaissance</span><a href="#reconnaissance" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>I started with information gathering on my target. The tool I used is <code style="color: green;">Nmap</code>. 
+<img data-src="/assets/pictures/vulnversity/nmap.png" alt="Nmap Results" data-proofer-ignore>
+<br />
+From the scan, we have 6 open ports.
+<br />
+<strong>Answer</strong> <code class="language-plaintext highlighter-rouge">6 ports</code>
+<br />
+The version of the squid proxy running on the machine is:
+<br />
+<strong>Answer</strong> <code class="language-plaintext highlighter-rouge">3.5.12</code>
+<br />
+Our target’s most likely Operating system is:
+<br />
+<strong>Answer</strong> <code class="language-plaintext highlighter-rouge">Ubuntu</code>
+<br /></p>
+<h2 id="gain-access"><span class="mr-2">Gain Access</span><a href="#gain-access" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>From the scan, we see that we have a <strong>http service</strong> running on <code class="language-plaintext highlighter-rouge">port 3333</code>. So I visited the location on my browser and found a website that was running on this port.
+<img data-src="/assets/pictures/vulnversity/http.png" alt="http service" data-proofer-ignore>
+I tried to inspect the the source code of this website but didn’t find anything helpful at all. So  I decided to do perform a hidden directory scan on this particular website using a popular site known as <code style="color: green;">Gobuster</code>. Alternatively, you can opt to use another tool that serve the same purpose known as <code style="color: green;">Feroxbuster</code>.
+<br />
+So far So good, right?
+From the gobuster I found a hidden directory <code style="color: green;">/internal</code>
+<img data-src="/assets/pictures/vulnversity/internal.png" alt="Gobuster Scan" data-proofer-ignore>
+After visiting the directory on my browser I realised that it a page where I could upload anything I wanted.
+<img data-src="/assets/pictures/vulnversity/upload.png" alt="Upload" data-proofer-ignore>
+I tried to upload a php reverse shell script but then I realised that some extensions were being filtered.
+<img data-src="/assets/pictures/vulnversity/filter.png" alt="Filtration" data-proofer-ignore>
+This is where it gets interesting since you have to think for an alternative. So I decided to use <code style="color: green;">Burpsuite</code>.
+<br />
+First, I created a payload:
+<img data-src="/assets/pictures/vulnversity/extension.png" alt="Burpsuite" data-proofer-ignore></p>
+
+<p>I captured the request and sent it to the intruder and then added extension of the file in the position tab for the payload.
+<img data-src="/assets/pictures/vulnversity/positons.png" alt="Position Tab" data-proofer-ignore>
+Before starting the attack I had to set the payload:
+<img data-src="/assets/pictures/vulnversity/payload.png" alt="Payload" data-proofer-ignore>
+After launching the attack I got a result of status 200 and all the extensions had the same length.
+<img data-src="/assets/pictures/vulnversity/attack.png" alt="Attack Results" data-proofer-ignore>
+From here I had to take the manual way… After trying all of them I found the right extension was <code class="language-plaintext highlighter-rouge">.phtml</code>
+<br />
+After uploading my <code style="color: green;">php-reverse-shell.phtml</code>, I went to the uploads folder where I found my uploaded script.
+<img data-src="/assets/pictures/vulnversity/uploads.png" alt="Sript" data-proofer-ignore>
+Before clicking on the script I had to set up my listener which was <code style="color: green;">pwncat-cs</code>
+<img data-src="/assets/pictures/vulnversity/gained.png" alt="Pwncat" data-proofer-ignore></p>
+
+<h2 id="escalate-privileges"><span class="mr-2">Escalate Privileges</span><a href="#escalate-privileges" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>Now we are in the machine as <strong>www-data</strong>, we need to escalate our privileges to root.</p>
+
+<h3 id="gtfobins"><span class="mr-2">GTFOBINS</span><a href="#gtfobins" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<p>We run the following command to know what misconfiguration we have in the machine.
+<code class="language-plaintext highlighter-rouge">$ find / -type f -perm 4000 2&gt;/dev/null</code>
+<img data-src="/assets/pictures/vulnversity/systemctl.png" alt="GTFOBINS" data-proofer-ignore>
+Now heading to <a href="https://gtfobins.github.io/">GTFOBINS</a>…
+<img data-src="/assets/pictures/vulnversity/sudoctl.png" alt="sudo systemctl" data-proofer-ignore></p>
 
 </div>
 
