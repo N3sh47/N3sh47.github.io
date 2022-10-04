@@ -1,17 +1,17 @@
 
 
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <id>/</id>
+  <id>https://n3sh47.github.io/</id>
   <title>N3sh47</title>
   <subtitle>You were boasting on and on about your elite hacker skills in the bar and a few Bounty Hunters decided they'd take you up on claims! Prove your status is more than just a few glasses at the bar. I sense bell peppers &amp; beef in your future! </subtitle>
-  <updated>2022-09-27T17:54:00+00:00</updated>
+  <updated>2022-10-04T16:07:19+00:00</updated>
   <author>
     <name>Munene John</name>
-    <uri>/</uri>
+    <uri>https://n3sh47.github.io/</uri>
   </author>
-  <link rel="self" type="application/atom+xml" href="/feed.xml"/>
+  <link rel="self" type="application/atom+xml" href="https://n3sh47.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en"
-    href="/"/>
+    href="https://n3sh47.github.io/"/>
   <generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator>
   <rights> © 2022 Munene John </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
@@ -21,13 +21,13 @@
   
   <entry>
     <title>Eternal Blue - TryHackMe</title>
-    <link href="/posts/EternalBlue/" rel="alternate" type="text/html" title="Eternal Blue - TryHackMe" />
-    <published>2022-09-20T03:30:42+00:00</published>
+    <link href="https://n3sh47.github.io/posts/EternalBlue/" rel="alternate" type="text/html" title="Eternal Blue - TryHackMe" />
+    <published>2022-10-02T02:43:12+00:00</published>
   
-    <updated>2022-09-20T03:30:42+00:00</updated>
+    <updated>2022-10-02T02:43:12+00:00</updated>
   
-    <id>/posts/EternalBlue/</id>
-    <content src="/posts/EternalBlue/" />
+    <id>https://n3sh47.github.io/posts/EternalBlue/</id>
+    <content src="https://n3sh47.github.io/posts/EternalBlue/" />
     <author>
       <name>Munene John</name>
     </author>
@@ -63,13 +63,13 @@ In this article I am going to show you how to exploit a very pop...
   
   <entry>
     <title>Mr Robot CTF - TryHackMe</title>
-    <link href="/posts/MrRobot/" rel="alternate" type="text/html" title="Mr Robot CTF - TryHackMe" />
+    <link href="https://n3sh47.github.io/posts/MrRobot/" rel="alternate" type="text/html" title="Mr Robot CTF - TryHackMe" />
     <published>2022-09-20T03:30:42+00:00</published>
   
     <updated>2022-09-20T03:30:42+00:00</updated>
   
-    <id>/posts/MrRobot/</id>
-    <content src="/posts/MrRobot/" />
+    <id>https://n3sh47.github.io/posts/MrRobot/</id>
+    <content src="https://n3sh47.github.io/posts/MrRobot/" />
     <author>
       <name>Munene John</name>
     </author>
@@ -108,13 +108,13 @@ Host discovery disabled (-Pn). A...
   
   <entry>
     <title>Basic Pentesting - TryHackMe</title>
-    <link href="/posts/BasicPentesting/" rel="alternate" type="text/html" title="Basic Pentesting - TryHackMe" />
+    <link href="https://n3sh47.github.io/posts/BasicPentesting/" rel="alternate" type="text/html" title="Basic Pentesting - TryHackMe" />
     <published>2022-09-08T02:38:14+00:00</published>
   
     <updated>2022-09-08T02:38:14+00:00</updated>
   
-    <id>/posts/BasicPentesting/</id>
-    <content src="/posts/BasicPentesting/" />
+    <id>https://n3sh47.github.io/posts/BasicPentesting/</id>
+    <content src="https://n3sh47.github.io/posts/BasicPentesting/" />
     <author>
       <name>Munene John</name>
     </author>
@@ -155,13 +155,13 @@ Port 80 is the port number a...
   
   <entry>
     <title>Pickle Rick - TryHackMe</title>
-    <link href="/posts/PickleRick/" rel="alternate" type="text/html" title="Pickle Rick - TryHackMe" />
+    <link href="https://n3sh47.github.io/posts/PickleRick/" rel="alternate" type="text/html" title="Pickle Rick - TryHackMe" />
     <published>2022-09-05T11:42:24+00:00</published>
   
     <updated>2022-09-05T11:42:24+00:00</updated>
   
-    <id>/posts/PickleRick/</id>
-    <content src="/posts/PickleRick/" />
+    <id>https://n3sh47.github.io/posts/PickleRick/</id>
+    <content src="https://n3sh47.github.io/posts/PickleRick/" />
     <author>
       <name>Munene John</name>
     </author>
@@ -203,13 +203,13 @@ Sc...
   
   <entry>
     <title>Bounty Hacker - TryHackMe</title>
-    <link href="/posts/BountyHacker/" rel="alternate" type="text/html" title="Bounty Hacker - TryHackMe" />
+    <link href="https://n3sh47.github.io/posts/BountyHacker/" rel="alternate" type="text/html" title="Bounty Hacker - TryHackMe" />
     <published>2022-09-04T06:42:24+00:00</published>
   
     <updated>2022-09-04T06:42:24+00:00</updated>
   
-    <id>/posts/BountyHacker/</id>
-    <content src="/posts/BountyHacker/" />
+    <id>https://n3sh47.github.io/posts/BountyHacker/</id>
+    <content src="https://n3sh47.github.io/posts/BountyHacker/" />
     <author>
       <name>Munene John</name>
     </author>

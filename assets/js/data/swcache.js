@@ -48,7 +48,7 @@ const allowedDomains = [
     'www.google-analytics.com',
   
 
-  '',
+  'n3sh47.github.io',
 
   
 
