@@ -4,7 +4,7 @@
   <id>https://n3sh47.github.io/</id>
   <title>N3sh47</title>
   <subtitle>You were boasting on and on about your elite hacker skills in the bar and a few Bounty Hunters decided they'd take you up on claims! Prove your status is more than just a few glasses at the bar. I sense bell peppers &amp; beef in your future! </subtitle>
-  <updated>2022-10-04T16:23:05+00:00</updated>
+  <updated>2022-10-04T16:30:19+00:00</updated>
   <author>
     <name>Munene John</name>
     <uri>https://n3sh47.github.io/</uri>
@@ -20,8 +20,8 @@
 
   
   <entry>
-    <title>Eternal Blue - TryHackMe</title>
-    <link href="https://n3sh47.github.io/posts/vulnversity/" rel="alternate" type="text/html" title="Eternal Blue - TryHackMe" />
+    <title>Vulnversity - TryHackMe</title>
+    <link href="https://n3sh47.github.io/posts/vulnversity/" rel="alternate" type="text/html" title="Vulnversity - TryHackMe" />
     <published>2022-10-02T02:43:12+00:00</published>
   
     <updated>2022-10-02T02:43:12+00:00</updated>
@@ -49,7 +49,7 @@
 
 
       
-
+This room mainly focused on active recon, web app attacks, and privilege escalation.
 Recon
 
     </summary>

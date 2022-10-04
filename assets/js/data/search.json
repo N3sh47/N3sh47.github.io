@@ -1,7 +1,7 @@
 [
   
   {
-    "title": "Eternal Blue - TryHackMe",
+    "title": "Vulnversity - TryHackMe",
     "url": "/posts/vulnversity/",
     "categories": "Blogging, TryHackme",
     "tags": "walkthrough",
@@ -12,7 +12,7 @@
 
 
 
-    "snippet": "Recon"
+    "snippet": "This room mainly focused on active recon, web app attacks, and privilege escalation.Recon"
   },
   
   {
